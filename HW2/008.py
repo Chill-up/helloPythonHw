@@ -1,9 +1,13 @@
 # Задайте список из N элементов, заполненных числами из промежутка [-N, N]. Найдите произведение элементов на указанных позициях. 
 # Позиции хранятся в файле file.txt в одной строке одно число.
 
+import random
+
 number = int(input("Введите число N: "))
 
 lst = []
-for i in range(-number, number+1):
-    lst.append(i)
+for i in range(number):
+    lst.append(random.randint(-number,number))
 print(lst)
+
+# получить позиции из файла и выполнить второе условие задачи

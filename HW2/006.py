@@ -6,7 +6,6 @@
 
 number = int(input("Введите число N: "))
 
-
 def MultiplyDigitsFrom1toN(n):
     res = []
     for i in range(1, n+1):
@@ -14,7 +13,6 @@ def MultiplyDigitsFrom1toN(n):
     for j in range(1, n):
         res[j] = res[j-1] * (j+1)
     return (res)
-
 
 result = MultiplyDigitsFrom1toN(number)
 print(f'Набор произведений чисел от 1 до {number} = {result}')

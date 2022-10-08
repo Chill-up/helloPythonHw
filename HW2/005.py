@@ -22,5 +22,5 @@ def SumOfDigitsInNumber(n):
         intN //= 10
     return sum
 
-number = float(input("Введите число: "))
+number = float(input("Введите любое вещественное число: "))
 print(f"Сумма цифр введенного числа = {SumOfDigitsInNumber(number)}")
