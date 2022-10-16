@@ -7,7 +7,6 @@
 
 
 import random
-from unittest import result
 
 lst = []
 for i in range(5):
@@ -15,11 +14,11 @@ for i in range(5):
 
 print(f"Сгенерирован следующий список чисел:\n{lst}")
 
-result = 0.0
+res = 0.0
 lstCut = []
 for i in range(len(lst)):
     if not lst[i].is_integer():
         lstCut.append(round(lst[i]*100%100))
-result = (max(lstCut)-min(lstCut))/100
+res = (max(lstCut)-min(lstCut))/100
 
-print(f"Разница между максимальным и минимальным значением дробной части элементов = {result}")
+print(f"Разница между максимальным и минимальным значением дробной части элементов = {res}")
