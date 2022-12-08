@@ -33,8 +33,8 @@ for i in range (len(x) - 1):
                 change_x.append((x[i], func(x[i], *coeff)))
                 change_dir = 1
 
-print(len(change_x))
-print(f'Корни функции\n{change_x}')
+print(f'Кол-во корней функции на промежутке {x_limit} = {len(change_x)}')
+print(f'Все корни функции на промежутке {x_limit}: \n{change_x}')
 
 def change_color():
     global color
